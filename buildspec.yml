@@ -2,9 +2,10 @@ version: 0.2
 
 phases:
   install:
+    runtime-versions:
+      nodejs: 14
     commands:
       - node -v
-      - nvm list
   build:
     commands:
       - npm install  # Install project dependencies

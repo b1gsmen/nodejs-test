@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 12
+  build:
+    commands:
+      - npm install  # Install project dependencies
+      - npm test  # Run your tests (replace with your actual test command)
+      - npm run build  # Build your Node.js project (replace with your actual build command)
+      - zip -r my-project.zip ./  # Package the project into a zip file
+
+artifacts:
+  files: my-project.zip  # Specify the zip file to be uploaded
